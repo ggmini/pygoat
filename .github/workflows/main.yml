@@ -44,7 +44,6 @@ jobs:
 
     - name: Build Docker Image
       run: |
-        sudo apt-get update && sudo apt-get install --no-install-recommends -y dnsutils=1:9.11.5.P4+dfsg-5.1+deb10u7 libpq-dev=11.16-0+deb10u1 python3-dev=3.7.3-1
         docker build -f Dockerfile -t myapp:latest .
 
     - name: Docker Scout Scan
